@@ -5,11 +5,16 @@ $async: true
 title: Ministry of cooperatives annual health report for financing cooperatives
 type: object
 required:
+  - url
   - issued
   - score
   - grade
   - marks
 properties:
+  url:
+    title: Downloadable URL of the original report
+    type: string
+    format: uri
   issued:
     title: Date the report was issued
     type: string

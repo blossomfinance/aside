@@ -1,0 +1,17 @@
+
+$schema: http://json-schema.org/draft-07/schema#
+$id: KSPPSBlossomCreditRating
+$async: true
+title: Credit rating assigned by Blossom based on due diligence
+type: string
+enum:
+  - AAA.mfi
+  - AA.mfi
+  - A.mfi
+  - BBB.mfi
+  - BB.mfi
+  - B.mfi
+  - CCC.mfi
+  - CC.mfi
+  - C.mfi
+  - D.mfi

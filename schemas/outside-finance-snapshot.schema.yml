@@ -4,7 +4,16 @@ $id: OutsideFinanceSnapshot
 $async: true
 title: Snapshot of all external financing
 type: object
+required:
+  - url
+  - asOf
+  - total
+  - outstanding
 properties:
+  url:
+    title: Downloadable URL of sworn, signed statement
+    type: string
+    format: url
   asOf:
     title: Date of this snapshot
     type: string
@@ -17,7 +26,3 @@ properties:
     type: array
     items:
       $ref: outside-finance-obligation.schema.yml
-required:
-  - asOf
-  - total
-  - outstanding

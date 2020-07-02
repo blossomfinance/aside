@@ -1,3 +1,10 @@
+
+currency: IDR
+amount: 2000000000
+tenure: 36
+rating: A.mfi
+projectedGrossAROI: 14.51
+
 issuer:
   name: Dana Insani
   legal:
@@ -22,6 +29,7 @@ issuer:
 
   # kspps-health-report.schema.yml
   healthReport:
+    url: https://s3.us-west-2.amazonaws.com/secure.notion-static.com/c28bf71b-7a2e-45f8-97ce-6ee937ec1522/Health_Report_2020-01_-_KSPPS_BMT_Dana_Insani.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20200702%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200702T172541Z&X-Amz-Expires=86400&X-Amz-Signature=d308fcb5ac5a4e3c1b8d9d56f455b88457fd896497e1f6cfc156c5bd63e22e28&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Health%2520Report%25202020-01%2520-%2520KSPPS%2520BMT%2520Dana%2520Insani.pdf%22
     issued: '2020-01-01'
     score: 82
     grade: healthy
@@ -47,8 +55,8 @@ issuer:
       G1: 5
       G2: 5
       H: 9
-  balanceSheetHistory:
 
+  balanceSheetHistory:
     # bank-balance-sheet-snapshot.schema.yml
     - currency: IDR
       asOf: '2020-07-01'
@@ -95,6 +103,7 @@ issuer:
 
   # outside-finance-snapshot.schema.yml
   outsideFinance:
+    url: 'https://s3.us-west-2.amazonaws.com/secure.notion-static.com/c28bf71b-7a2e-45f8-97ce-6ee937ec1522/Health_Report_2020-01_-_KSPPS_BMT_Dana_Insani.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20200702%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200702T172541Z&X-Amz-Expires=86400&X-Amz-Signature=d308fcb5ac5a4e3c1b8d9d56f455b88457fd896497e1f6cfc156c5bd63e22e28&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Health%2520Report%25202020-01%2520-%2520KSPPS%2520BMT%2520Dana%2520Insani.pdf%22'
     asOf: '2020-07-02'
     total: 6222222191
     outstanding:

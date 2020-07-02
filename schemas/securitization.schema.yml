@@ -4,7 +4,27 @@ $id: 'securitization.json'
 $async: true
 type: object
 properties:
+  currency:
+    $ref: iso-4217-currency-code.schema.yml
+  amount:
+    title: Net assets of this securitization (amount being financed)
+    type: number
+  tenure:
+    title: Duration of the contract (in months)
+    type: number
+    min: 0
+  rating:
+    oneOf:
+      - $ref: kspps-blossom-credit-rating.schema.yml
+  projectedGrossAROI:
+    title: Weighted expected profit rate
+    type: number
   issuer:
-    $ref: 'issuer.schema.yml'
+    $ref: issuer.schema.yml
 required:
+  - currency
+  - amount
+  - tenure
+  - rating
+  - projectedGrossAROI
   - issuer

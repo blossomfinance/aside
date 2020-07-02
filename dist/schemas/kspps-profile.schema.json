@@ -1,0 +1,47 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "KSPPSProfile",
+  "$async": true,
+  "title": "Profile of a \"Koperasi Simpan Pinjam dan Pembiayaan Syariah\" (KSPPS)",
+  "type": "object",
+  "properties": {
+    "members": {
+      "title": "Members of the cooperative",
+      "type": "integer"
+    },
+    "depositors": {
+      "title": "Members with an active deposit account",
+      "type": "integer"
+    },
+    "borrowers": {
+      "title": "Individuals with an active financing agreement",
+      "type": "integer"
+    },
+    "branches": {
+      "title": "Total physical branch offices",
+      "type": "integer"
+    },
+    "healthReport": {
+      "$ref": "kspps-health-report.schema.json"
+    },
+    "balanceSheetHistory": {
+      "type": "array",
+      "items": {
+        "$ref": "bank-balance-sheet-snapshot.schema.json"
+      },
+      "minItems": 6
+    },
+    "outsideFinance": {
+      "$ref": "outside-finance-snapshot.schema.json"
+    }
+  },
+  "required": [
+    "members",
+    "depositors",
+    "borrowers",
+    "branches",
+    "healthReport",
+    "balanceSheetHistory",
+    "outsideFinance"
+  ]
+}

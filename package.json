@@ -15,6 +15,7 @@
     "lodash.template": "^4.5.0",
     "ora": "^4.0.4",
     "pascal-case": "^3.1.1",
+    "release-it": "^13.6.4",
     "traverse": "^0.6.6"
   },
   "scripts": {

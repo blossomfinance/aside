@@ -1,0 +1,43 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "securitization.json",
+  "$async": true,
+  "title": "Information about a proposed asset-backed financing.",
+  "type": "object",
+  "properties": {
+    "currency": {
+      "$ref": "iso-4217-currency-code.schema.json"
+    },
+    "amount": {
+      "title": "Net assets of this securitization (amount being financed)",
+      "type": "number"
+    },
+    "tenure": {
+      "title": "Duration of the contract (in months)",
+      "type": "number",
+      "min": 0
+    },
+    "rating": {
+      "oneOf": [
+        {
+          "$ref": "kspps-blossom-credit-rating.schema.json"
+        }
+      ]
+    },
+    "projectedGrossAROI": {
+      "title": "Weighted expected profit rate",
+      "type": "number"
+    },
+    "issuer": {
+      "$ref": "issuer.schema.json"
+    }
+  },
+  "required": [
+    "currency",
+    "amount",
+    "tenure",
+    "rating",
+    "projectedGrossAROI",
+    "issuer"
+  ]
+}

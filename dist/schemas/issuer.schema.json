@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "Issuer",
+  "$async": true,
+  "title": "An Issuer seeking to raise funds",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "kspps-profile.schema.json"
+    },
+    {
+      "$ref": "institution.schema.json"
+    },
+    {
+      "required": [
+        "name",
+        "legal",
+        "category",
+        "address",
+        "founded",
+        "staff"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "Institution",
+  "$async": true,
+  "title": "Basics about an institution",
+  "type": "object",
+  "properties": {
+    "name": {
+      "title": "Name of the institution used colloquially",
+      "type": "string"
+    },
+    "legal": {
+      "$ref": "institution-legal.schema.json"
+    },
+    "category": {
+      "$ref": "institution-category.schema.json"
+    },
+    "address": {
+      "$ref": "address.schema.json"
+    },
+    "founded": {
+      "title": "Date the institution as founded",
+      "type": "string",
+      "format": "date"
+    },
+    "staff": {
+      "title": "Number of staff at the institution",
+      "type": "integer"
+    }
+  },
+  "required": [
+    "legal"
+  ]
+}

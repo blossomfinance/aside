@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "InstitutionLegal",
+  "$async": true,
+  "title": "An organization or entity's legal registration info",
+  "type": "object",
+  "properties": {
+    "name": {
+      "title": "Legal entity name registered in jurisdiction",
+      "type": "string"
+    },
+    "entityId": {
+      "title": "Legal entity ID registered in jurisdiction",
+      "type": "string"
+    },
+    "jurisdiction": {
+      "$ref": "iso-alpha-2.schema.json"
+    }
+  },
+  "required": [
+    "name",
+    "jurisdiction"
+  ]
+}

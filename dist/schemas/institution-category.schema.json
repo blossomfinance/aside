@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "InstitutionCategory",
+  "$async": true,
+  "title": "Industry category of an institution",
+  "type": "string",
+  "enum": [
+    "banking",
+    "microfinance",
+    "multi-finance",
+    "real-estate",
+    "waqaf"
+  ]
+}

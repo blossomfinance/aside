@@ -49,7 +49,7 @@
   },
   "homepage": "https://github.com/blossomfinance/aside#readme",
   "release-it": {
-    "non-interactive": true,
+    "ci": true,
     "git": {
       "commit": true,
       "tag": true,

@@ -1,0 +1,33 @@
+
+$schema: http://json-schema.org/draft-07/schema#
+$id: OutsideFinanceObligation
+$async: true
+title: Summary of a finance obligation
+type: object
+properties:
+  asOf:
+    type: string
+    format: date
+  currency:
+    $ref: iso-4217-currency-code.schema.yml
+  principal:
+    title: Original amount of funding
+    type: number
+  outstanding:
+    title: Amount still owed
+    type: number
+  paymentMonthly:
+    title: Payment per month or average if variable
+    type: number
+  paymentIsVariable:
+    title: Whether the payment is variable month to month
+    type: boolean
+  financier:
+    $ref: institution.schema.yml
+required:
+  - asOf
+  - currency
+  - principal
+  - outstanding
+  - paymentMonthly
+  - paymentIsVariable

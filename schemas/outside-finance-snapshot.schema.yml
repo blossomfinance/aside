@@ -1,0 +1,23 @@
+
+$schema: http://json-schema.org/draft-07/schema#
+$id: OutsideFinanceSnapshot
+$async: true
+title: Snapshot of all external financing
+type: object
+properties:
+  asOf:
+    title: Date of this snapshot
+    type: string
+    format: date
+  total:
+    title: Sum of current outstanding finance obligations
+    type: number
+  outstanding:
+    title: List of currently outstanding financing/loan obligations
+    type: array
+    items:
+      $ref: outside-finance-obligation.schema.yml
+required:
+  - asOf
+  - total
+  - outstanding

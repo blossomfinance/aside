@@ -1,0 +1,35 @@
+
+$schema: http://json-schema.org/draft-07/schema#
+$id: BankBalanceSheetSnapshot
+$async: true
+title: Snapshot of a bank's balance sheet at a point in time
+type: object
+properties:
+  currency:
+    $ref: iso-4217-currency-code.schema.yml
+  asOf:
+    type: string
+    format: date
+  assets:
+    title: Total Value of All Assets
+    type: number
+  outstanding:
+    title: Total Outsanding Financing Portfolio
+    type: number
+  deposits:
+    title: Total Deposits
+    type: number
+  outsideFinance:
+    title: Total Financing/Debt from External Sources
+    type: number
+  equity:
+    title: Total Equity Capital
+    type: number
+required:
+  - currency
+  - asOf
+  - assets
+  - outstanding
+  - deposits
+  - outsideFinance
+  - equity

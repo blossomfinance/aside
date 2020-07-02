@@ -1,0 +1,126 @@
+issuer:
+  name: Dana Insani
+  legal:
+    name: KSPPS BMT Dana Insani
+    jurisdiction: ID
+  category: microfinance
+  # address.schema.yml
+  address:
+    street: Jl. Tentara Pelajar No. 53, Tegalmulyo Desa Kepek
+    district: Wonosari
+    region: Gunung Kidul
+    province: Yogyakarta
+    postalCode: '55813'
+  founded: '2002-12-31'
+
+  # kspps-profile.schema.yml
+  staff: 77
+  members: 49706
+  depositors: 49706
+  borrowers: 3551
+  branches: 10
+
+  # kspps-health-report.schema.yml
+  healthReport:
+    issued: '2020-01-01'
+    score: 82
+    grade: healthy
+    marks:
+      A1: 5
+      A2: 5
+      B1: 10
+      B2: 5
+      B3: 5
+      C1: 2.75
+      C2: 3
+      C3: 3
+      C4: 2.7
+      C5: 3
+      D1: 2
+      D2: 4
+      D3: 1.5
+      E1: 5
+      E2: 2.5
+      F1: 0.75
+      F2: 0.75
+      F3: 2
+      G1: 5
+      G2: 5
+      H: 9
+  balanceSheetHistory:
+
+    # bank-balance-sheet-snapshot.schema.yml
+    - currency: IDR
+      asOf: '2020-07-01'
+      assets: 62315276876
+      outstanding: 42735431632
+      deposits: 46536317339
+      outsideFinance: 6222222191
+      equity: 9556737346
+    - currency: IDR
+      asOf: '2020-06-01'
+      assets: 62315276876
+      outstanding: 42735431632
+      deposits: 46536317339
+      outsideFinance: 6222222191
+      equity: 9556737346
+    - currency: IDR
+      asOf: '2020-05-01'
+      assets: 62315276876
+      outstanding: 42735431632
+      deposits: 46536317339
+      outsideFinance: 6222222191
+      equity: 9556737346
+    - currency: IDR
+      asOf: '2020-04-01'
+      assets: 62315276876
+      outstanding: 42735431632
+      deposits: 46536317339
+      outsideFinance: 6222222191
+      equity: 9556737346
+    - currency: IDR
+      asOf: '2020-03-01'
+      assets: 62315276876
+      outstanding: 42735431632
+      deposits: 46536317339
+      outsideFinance: 6222222191
+      equity: 9556737346
+    - currency: IDR
+      asOf: '2020-02-01'
+      assets: 62315276876
+      outstanding: 42735431632
+      deposits: 46536317339
+      outsideFinance: 6222222191
+      equity: 9556737346
+
+  # outside-finance-snapshot.schema.yml
+  outsideFinance:
+    asOf: '2020-07-02'
+    total: 6222222191
+    outstanding:
+      # outside-finance-obligation.schema.yml
+      - asOf: '2020-06-28'
+        currency: IDR
+        principal: 10000000000
+        outstanding: 6000000000
+        paymentMonthly: 200000000
+        paymentIsVariable: false
+        # institution.schema.yml
+        financier:
+          name: Bank Mandiri
+          # institution-legal.schema.yml
+          legal:
+            name: PT Bank Mandiri Tbk
+            jurisdiction: ID
+      - asOf: '2020-06-15'
+        currency: IDR
+        principal: 1000000000
+        outstanding: 222222191
+        paymentMonthly: 50000000
+        paymentIsVariable: false
+        financier:
+          name: Bank BNI Syariah
+          # institution-legal.schema.yml
+          legal:
+            name: PT. Bank BNI Syariah
+            jurisdiction: ID

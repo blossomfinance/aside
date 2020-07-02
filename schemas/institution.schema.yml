@@ -1,0 +1,22 @@
+
+$schema: http://json-schema.org/draft-07/schema#
+$id: Institution
+$async: true
+title: Basics about an institution
+type: object
+properties:
+  name:
+    type: string
+  legal:
+    $ref: institution-legal.schema.yml
+  category:
+    $ref: institution-category.schema.yml
+  address:
+    $ref: address.schema.yml
+  founded:
+    type: string
+    format: date
+  staff:
+    type: integer
+required:
+  - legal

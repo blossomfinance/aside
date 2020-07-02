@@ -1,0 +1,138 @@
+
+$schema: http://json-schema.org/draft-07/schema#
+$id: KSPPSHealthReport
+$async: true
+title: Ministry of cooperatives annual health report for financing cooperatives
+type: object
+required:
+  - issued
+  - score
+  - grade
+  - marks
+properties:
+  issued:
+    title: Date the report was issued
+    type: string
+    format: date
+  score:
+    title: Numeric score assigned by the regulator
+    type: number
+    min: 0
+    max: 100
+  grade:
+    type: string
+    enum:
+      - healthy
+      - quite healthy
+      - unwell
+      - not healthy
+  marks:
+    title: Detailed ratings used to calculate score
+    type: object
+    required: [A1, A2, B1, B2, B3, C1, C2, C3, C4, C5, D1, D2, E1, E2, F1, F2, F3, G1, G2, H]
+    properties:
+      A1:
+        title: Capital - Equity Total Assets
+        type: number
+        min: 0
+        max: 5
+      A2:
+        title: Capital - Capital Adequacy Ratio (CAR)
+        type: number
+        min: 0
+        max: 5
+      B1:
+        title: Asset Quality - NPF (Non-Performing Financing) Ratio
+        type: number
+        min: 0
+        max: 10
+      B2:
+        title: Asset Quality - Financing Risk Ratio
+        type: number
+        min: 0
+        max: 5
+      B3:
+        title: Asset Quality - Write-Off Ratio
+        type: number
+        min: 0
+        max: 5
+      C1:
+        title: Management - General
+        type: number
+        min: 0
+        max: 3
+      C2:
+        title: Management - Institution
+        type: number
+        min: 0
+        max: 3
+      C3:
+        title: Management - Capital
+        type: number
+        min: 0
+        max: 3
+      C4:
+        title: Management - Asset
+        type: number
+        min: 0
+        max: 3
+      C5:
+        title: Management - Liquidity
+        type: number
+        min: 0
+        max: 3
+      D1:
+        title: Efficiency - OpEx to Gross Participation Ratio
+        type: number
+        min: 0
+        max: 10
+      D2:
+        title: Efficiency - Fixed Assets to Total Assets Ratio
+        type: number
+        min: 0
+        max: 4
+      D3:
+        title: Efficiency - Service Efficiency Ratio
+        type: number
+        min: 0
+        max: 2
+      E1:
+        title: Liquidity - Cash to Debt Ratio
+        type: number
+        min: 0
+        max: 10
+      E2:
+        title: Liquidity - Financing to Deposits Ratio
+        type: number
+        min: 0
+        max: 5
+      F1:
+        title: Independence & Sustainability - Asset Profitability
+        type: number
+        min: 0
+        max: 3
+      F2:
+        title: Independence & Sustainability - Return on Capital
+        type: number
+        min: 0
+        max: 3
+      F3:
+        title: Independence & Sustainability - Independence of Service
+        type: number
+        min: 0
+        max: 4
+      G1:
+        title: Cooperative Nature - Bruto Participation Ratio
+        type: number
+        min: 0
+        max: 5
+      G2:
+        title: Cooperative Nature - Economic Promotion Ratio
+        type: number
+        min: 0
+        max: 5
+      H:
+        title: Shariah - Adherance to Shariah Principles
+        type: number
+        min: 0
+        max: 10

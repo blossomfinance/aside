@@ -1,0 +1,42 @@
+{
+  "name": "blossom-aside",
+  "version": "0.0.1",
+  "description": "Asset Securitization Interface for Data Exchange (ASIDE)",
+  "main": "index.js",
+  "bin": {
+    "blossom-aside": "build.js"
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "dependencies": {
+    "eslint-plugin-es-beautifier": "^1.0.1"
+  },
+  "devDependencies": {
+    "js-yaml": "^3.14.0",
+    "ora": "^4.0.4",
+    "pascal-case": "^3.1.1",
+    "traverse": "^0.6.6"
+  },
+  "scripts": {
+    "test": "node test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blossomfinance/aside.git"
+  },
+  "keywords": [
+    "sukuk",
+    "securitization",
+    "API",
+    "JSON",
+    "Schema"
+  ],
+  "author": "Matthew J. Martin <matthew@blossomfinance.com>",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/blossomfinance/aside/issues"
+  },
+  "homepage": "https://github.com/blossomfinance/aside#readme"
+}

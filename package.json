@@ -26,7 +26,9 @@
     "build": "npm run clean && npm run build:schemas && npm run build:docs",
     "build:schemas": "./bin/build.js",
     "build:docs": "./bin/docs.js",
-    "test": "node test/test.js"
+    "test": "node test/test.js",
+    "before:release": "npm test && npm run build",
+    "release": "release-it"
   },
   "repository": {
     "type": "git",
@@ -44,5 +46,19 @@
   "bugs": {
     "url": "https://github.com/blossomfinance/aside/issues"
   },
-  "homepage": "https://github.com/blossomfinance/aside#readme"
+  "homepage": "https://github.com/blossomfinance/aside#readme",
+  "release-it": {
+    "non-interactive": true,
+    "git": {
+      "commit": true,
+      "tag": true,
+      "push": true
+    },
+    "github": {
+      "release": true
+    },
+    "npm": {
+      "publish": true
+    }
+  }
 }

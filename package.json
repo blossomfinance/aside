@@ -23,9 +23,10 @@
     "clean:docs": "rm -rf docs/*.md",
     "clean:schemas": "rm -rf dist/schemas/*.schema.json",
     "clean:examples": "rm -rf dist/examples/*.json",
-    "build": "npm run clean && npm run build:schemas && npm run build:docs",
+    "build": "npm run clean && npm run build:schemas && npm run build:docs && npm run build:examples",
     "build:schemas": "./bin/build.js",
     "build:docs": "./bin/docs.js",
+    "build:examples": "./bin/examples.js",
     "test": "node test/test.js",
     "before:release": "npm test && npm run build",
     "release": "release-it"

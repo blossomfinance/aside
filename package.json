@@ -1,6 +1,6 @@
 {
   "name": "blossom-aside",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Asset Securitization Interface for Data Exchange (ASIDE)",
   "main": "index.js",
   "directories": {

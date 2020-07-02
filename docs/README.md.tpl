@@ -2,7 +2,10 @@
 
 Specified as [JSON Schema](https://json-schema.org/)
 
-**START HERE: [Securitization](dist/schemas/securitization.schema.json)** is the base level schema. 
+**START HERE:**
+
+- Full Example (data): [BMT Dana Insani 1](dist/examples/bmt-dana-insani-1.json)
+- Base-Level Schema: [Securitization](dist/schemas/securitization.schema.json)
 
 ## Docs
 

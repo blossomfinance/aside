@@ -1,0 +1,150 @@
+{
+  "currency": "IDR",
+  "amount": 2000000000,
+  "tenure": 36,
+  "rating": "A.mfi",
+  "projectedGrossAROI": 14.51,
+  "issuer": {
+    "name": "Dana Insani",
+    "legal": {
+      "name": "KSPPS BMT Dana Insani",
+      "jurisdiction": "ID"
+    },
+    "category": "microfinance",
+    "address": {
+      "street": "Jl. Tentara Pelajar No. 53, Tegalmulyo Desa Kepek",
+      "district": "Wonosari",
+      "region": "Gunung Kidul",
+      "province": "Yogyakarta",
+      "postalCode": "55813"
+    },
+    "founded": "2002-12-31",
+    "staff": 77,
+    "members": 49706,
+    "depositors": 49706,
+    "borrowers": 3551,
+    "branches": 10,
+    "healthReport": {
+      "url": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/c28bf71b-7a2e-45f8-97ce-6ee937ec1522/Health_Report_2020-01_-_KSPPS_BMT_Dana_Insani.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20200702%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200702T172541Z&X-Amz-Expires=86400&X-Amz-Signature=d308fcb5ac5a4e3c1b8d9d56f455b88457fd896497e1f6cfc156c5bd63e22e28&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Health%2520Report%25202020-01%2520-%2520KSPPS%2520BMT%2520Dana%2520Insani.pdf%22",
+      "issued": "2020-01-01",
+      "score": 82,
+      "grade": "healthy",
+      "marks": {
+        "A1": 5,
+        "A2": 5,
+        "B1": 10,
+        "B2": 5,
+        "B3": 5,
+        "C1": 2.75,
+        "C2": 3,
+        "C3": 3,
+        "C4": 2.7,
+        "C5": 3,
+        "D1": 2,
+        "D2": 4,
+        "D3": 1.5,
+        "E1": 5,
+        "E2": 2.5,
+        "F1": 0.75,
+        "F2": 0.75,
+        "F3": 2,
+        "G1": 5,
+        "G2": 5,
+        "H": 9
+      }
+    },
+    "balanceSheetHistory": [
+      {
+        "currency": "IDR",
+        "asOf": "2020-07-01",
+        "assets": 62315276876,
+        "outstanding": 42735431632,
+        "deposits": 46536317339,
+        "outsideFinance": 6222222191,
+        "equity": 9556737346
+      },
+      {
+        "currency": "IDR",
+        "asOf": "2020-06-01",
+        "assets": 62315276876,
+        "outstanding": 42735431632,
+        "deposits": 46536317339,
+        "outsideFinance": 6222222191,
+        "equity": 9556737346
+      },
+      {
+        "currency": "IDR",
+        "asOf": "2020-05-01",
+        "assets": 62315276876,
+        "outstanding": 42735431632,
+        "deposits": 46536317339,
+        "outsideFinance": 6222222191,
+        "equity": 9556737346
+      },
+      {
+        "currency": "IDR",
+        "asOf": "2020-04-01",
+        "assets": 62315276876,
+        "outstanding": 42735431632,
+        "deposits": 46536317339,
+        "outsideFinance": 6222222191,
+        "equity": 9556737346
+      },
+      {
+        "currency": "IDR",
+        "asOf": "2020-03-01",
+        "assets": 62315276876,
+        "outstanding": 42735431632,
+        "deposits": 46536317339,
+        "outsideFinance": 6222222191,
+        "equity": 9556737346
+      },
+      {
+        "currency": "IDR",
+        "asOf": "2020-02-01",
+        "assets": 62315276876,
+        "outstanding": 42735431632,
+        "deposits": 46536317339,
+        "outsideFinance": 6222222191,
+        "equity": 9556737346
+      }
+    ],
+    "outsideFinance": {
+      "url": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/c28bf71b-7a2e-45f8-97ce-6ee937ec1522/Health_Report_2020-01_-_KSPPS_BMT_Dana_Insani.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20200702%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200702T172541Z&X-Amz-Expires=86400&X-Amz-Signature=d308fcb5ac5a4e3c1b8d9d56f455b88457fd896497e1f6cfc156c5bd63e22e28&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Health%2520Report%25202020-01%2520-%2520KSPPS%2520BMT%2520Dana%2520Insani.pdf%22",
+      "asOf": "2020-07-02",
+      "total": 6222222191,
+      "outstanding": [
+        {
+          "asOf": "2020-06-28",
+          "currency": "IDR",
+          "principal": 10000000000,
+          "outstanding": 6000000000,
+          "paymentMonthly": 200000000,
+          "paymentIsVariable": false,
+          "financier": {
+            "name": "Bank Mandiri",
+            "legal": {
+              "name": "PT Bank Mandiri Tbk",
+              "jurisdiction": "ID"
+            }
+          }
+        },
+        {
+          "asOf": "2020-06-15",
+          "currency": "IDR",
+          "principal": 1000000000,
+          "outstanding": 222222191,
+          "paymentMonthly": 50000000,
+          "paymentIsVariable": false,
+          "financier": {
+            "name": "Bank BNI Syariah",
+            "legal": {
+              "name": "PT. Bank BNI Syariah",
+              "jurisdiction": "ID"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

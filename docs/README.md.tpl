@@ -2,6 +2,8 @@
 
 Specified as [JSON Schema](https://json-schema.org/)
 
+**START HERE: [Securitization](dist/schemas/securitization.schema.json)** is the base level schema. 
+
 ## Docs
 
 <% schemas.forEach((schema) => { %>

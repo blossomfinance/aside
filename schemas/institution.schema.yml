@@ -6,6 +6,7 @@ title: Basics about an institution
 type: object
 properties:
   name:
+    title: Name of the institution used colloquially
     type: string
   legal:
     $ref: institution-legal.schema.yml
@@ -14,9 +15,11 @@ properties:
   address:
     $ref: address.schema.yml
   founded:
+    title: Date the institution as founded
     type: string
     format: date
   staff:
+    title: Number of staff at the institution
     type: integer
 required:
   - legal

@@ -5,16 +5,47 @@
   "title": "Information about a proposed asset-backed financing.",
   "type": "object",
   "properties": {
+    "name": {
+      "title": "Unique name of this security",
+      "type": "string",
+      "minLength": 1
+    },
+    "symbol": {
+      "title": "Ticker symbol for secondary market trading",
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 16
+    },
     "currency": {
       "$ref": "iso-4217-currency-code.schema.json"
     },
-    "amount": {
-      "title": "Net assets of this securitization (amount being financed)",
+    "maximumAmount": {
+      "title": "Maximum net assets of this securitization (amount being financed) tranche",
+      "type": "number"
+    },
+    "minimumInvestmentAmount": {
+      "title": "Minimum per investment subscription allowed into this tranche.",
+      "type": "number"
+    },
+    "trancheNumber": {
+      "title": "Number of the funding traunch. Security may have more than one tranche, but will always have at least one tranche.",
+      "type": "integer"
+    },
+    "amountSubscribedCurrent": {
+      "title": "Amount of funds committed but not yet funded for this current tranche",
+      "type": "number"
+    },
+    "amountFundedCurrent": {
+      "title": "Net funding already received for this tranch'",
+      "type": "number"
+    },
+    "amountFundedPrevious": {
+      "title": "Total net funded in all previous traunches",
       "type": "number"
     },
     "tenure": {
       "title": "Duration of the contract (in months)",
-      "type": "number",
+      "type": "integer",
       "min": 0
     },
     "rating": {
@@ -33,8 +64,15 @@
     }
   },
   "required": [
+    "name",
+    "symbol",
+    "maximumAmount",
+    "minimumInvestmentAmount",
+    "trancheNumber",
+    "amountSubscribedCurrent",
+    "amountFundedCurrent",
+    "amountFundedPrevious",
     "currency",
-    "amount",
     "tenure",
     "rating",
     "projectedGrossAROI",

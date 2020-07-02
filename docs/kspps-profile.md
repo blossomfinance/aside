@@ -2,6 +2,8 @@
 
 Profile of a "Koperasi Simpan Pinjam dan Pembiayaan Syariah" (KSPPS)
 
+[View the JSON schema](../dist/schemas/kspps-profile.schema.json)
+
 
 
 ## members
@@ -11,13 +13,11 @@ Profile of a "Koperasi Simpan Pinjam dan Pembiayaan Syariah" (KSPPS)
 Members of the cooperative
 
 
-
 ## depositors
 
 
 **Type: `integer`**
 Members with an active deposit account
-
 
 
 ## borrowers
@@ -27,7 +27,6 @@ Members with an active deposit account
 Individuals with an active financing agreement
 
 
-
 ## branches
 
 
@@ -35,11 +34,9 @@ Individuals with an active financing agreement
 Total physical branch offices
 
 
-
 ## healthReport
 
 **See: [kspps-health-report.md](kspps-health-report.md)**
-
 
 ## balanceSheetHistory
 
@@ -48,10 +45,9 @@ Total physical branch offices
 
 
 
-
 ## outsideFinance
 
 **See: [outside-finance-snapshot.md](outside-finance-snapshot.md)**
-
+<!-- END of schema.properties.forEach -->
 
 

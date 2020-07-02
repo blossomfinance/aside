@@ -2,18 +2,18 @@
 
 Snapshot of a bank's balance sheet at a point in time
 
+[View the JSON schema](../dist/schemas/bank-balance-sheet-snapshot.schema.json)
+
 
 
 ## currency
 
 **See: [iso-4217-currency-code.md](iso-4217-currency-code.md)**
 
-
 ## asOf
 
 
 **Type: `string`**
-
 
 
 
@@ -24,13 +24,11 @@ Snapshot of a bank's balance sheet at a point in time
 Total Value of All Assets
 
 
-
 ## outstanding
 
 
 **Type: `number`**
 Total Outsanding Financing Portfolio
-
 
 
 ## deposits
@@ -40,13 +38,11 @@ Total Outsanding Financing Portfolio
 Total Deposits
 
 
-
 ## outsideFinance
 
 
 **Type: `number`**
 Total Financing/Debt from External Sources
-
 
 
 ## equity
@@ -55,6 +51,6 @@ Total Financing/Debt from External Sources
 **Type: `number`**
 Total Equity Capital
 
-
+<!-- END of schema.properties.forEach -->
 
 

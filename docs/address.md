@@ -2,6 +2,8 @@
 
 A physical address
 
+[View the JSON schema](../dist/schemas/address.schema.json)
+
 
 
 ## street
@@ -11,13 +13,11 @@ A physical address
 Street Address
 
 
-
 ## unit
 
 
 **Type: `string`**
 Suite or Unit Number
-
 
 
 ## district
@@ -27,13 +27,11 @@ Suite or Unit Number
 District/City (Kec.)
 
 
-
 ## region
 
 
 **Type: `string`**
 Region (Kab.)
-
 
 
 ## province
@@ -43,13 +41,12 @@ Region (Kab.)
 Province
 
 
-
 ## postalCode
 
 
 **Type: `string`**
 Postal Code / Zipcode
 
-
+<!-- END of schema.properties.forEach -->
 
 

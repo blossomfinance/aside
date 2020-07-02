@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "securitization.json",
+  "$id": "Securitization",
   "$async": true,
   "title": "Information about a proposed asset-backed financing.",
   "type": "object",

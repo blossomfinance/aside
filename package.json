@@ -3,9 +3,6 @@
   "version": "0.0.1",
   "description": "Asset Securitization Interface for Data Exchange (ASIDE)",
   "main": "index.js",
-  "bin": {
-    "blossom-aside": "build.js"
-  },
   "directories": {
     "lib": "lib",
     "test": "test"
@@ -21,6 +18,13 @@
     "traverse": "^0.6.6"
   },
   "scripts": {
+    "clean": "npm run clean:docs && npm run clean:schemas && npm run clean:examples",
+    "clean:docs": "rm -rf docs/*.md",
+    "clean:schemas": "rm -rf dist/schemas/*.schema.json",
+    "clean:examples": "rm -rf dist/examples/*.json",
+    "build": "npm run clean && npm run build:schemas && npm run build:docs",
+    "build:schemas": "./bin/build.js",
+    "build:docs": "./bin/docs.js",
     "test": "node test/test.js"
   },
   "repository": {
